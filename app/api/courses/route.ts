@@ -36,3 +36,5 @@ export async function POST(req: NextRequest) {
     return created(await createCourse(input, session.userId));
   });
 }
+
+///
