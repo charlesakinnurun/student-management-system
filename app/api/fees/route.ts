@@ -5,7 +5,7 @@ import { buildMeta, parseListQuery } from "@/lib/http/pagination";
 import { requireRole } from "@/lib/auth/session";
 import { createFeeSchema } from "@/lib/validation/fee";
 import { createFee, listFees } from "@/lib/services/fee.service";
-
+//
 export async function GET(req: NextRequest) {
   return apiHandler(req, async () => {
     await requireRole("ADMIN");
