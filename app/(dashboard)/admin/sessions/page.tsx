@@ -33,6 +33,7 @@ const columns: Column<SessionRow>[] = [
   { key: "enrollments", header: "Enrolments", render: (row) => row._count.enrollments },
 ];
 
+/* */
 export default function SessionsPage() {
   return (
     <CrudPage<SessionRow>
