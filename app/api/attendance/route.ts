@@ -7,7 +7,7 @@ import { badRequest } from "@/lib/http/errors";
 import { assertCourseManageAccess } from "@/lib/services/access";
 import { bulkAttendanceSchema } from "@/lib/validation/attendance";
 import { bulkMarkAttendance, listAttendance } from "@/lib/services/attendance.service";
-
+//
 export async function GET(req: NextRequest) {
   return apiHandler(req, async () => {
     const session = await requireRole("ADMIN", "LECTURER");
